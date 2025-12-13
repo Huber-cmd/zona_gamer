@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros - Zona Gamer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/include.js" defer></script>
+</head>
+<body class="bg-[#0a0a0a] text-gray-200">
+
+  <!-- NAVBAR GLOBAL -->
+  <div include-html="partials/navbar.html"></div>
+
+  <!-- HERO -->
+  <section class="relative h-[50vh] bg-[url('https://images.unsplash.com/photo-1581276879432-15a27c17f1a9')] bg-cover bg-center flex items-center justify-center">
+    <div class="absolute inset-0 bg-black/70"></div>
+    <h1 class="relative text-5xl md:text-6xl font-extrabold text-purple-400 drop-shadow-xl text-center px-6">
+      Conoce a Zona Gamer
+    </h1>
+  </section>
+
+  <main class="max-w-6xl mx-auto px-6 py-16 space-y-20">
+
+    <!-- QUIÉNES SOMOS -->
+    <section>
+      <h2 class="text-3xl font-bold text-purple-400 mb-6 text-center">Quiénes somos</h2>
+      <p class="text-gray-400 text-lg text-center max-w-3xl mx-auto">
+        Zona Gamer es una comunidad digital dedicada a ofrecer noticias, reviews, guías y análisis sobre videojuegos,
+        hardware y tecnología. Nuestro objetivo es mantener a los gamers informados y conectados con las últimas tendencias.
+      </p>
+    </section>
+
+    <!-- NUESTROS VALORES -->
+    <section>
+      <h2 class="text-3xl font-bold text-purple-400 mb-10 text-center">Nuestros valores</h2>
+      <div class="grid md:grid-cols-3 gap-10 text-center">
+        <div class="bg-[#121212] p-6 rounded-2xl border border-purple-500/30 shadow-lg hover:shadow-purple-400/20 transition">
+          <h3 class="text-xl font-bold text-purple-300 mb-2">Pasión Gamer</h3>
+          <p class="text-gray-400 text-sm">Amamos los videojuegos y buscamos compartir la mejor información con nuestra comunidad.</p>
+        </div>
+        <div class="bg-[#121212] p-6 rounded-2xl border border-purple-500/30 shadow-lg hover:shadow-purple-400/20 transition">
+          <h3 class="text-xl font-bold text-purple-300 mb-2">Innovación</h3>
+          <p class="text-gray-400 text-sm">Siempre buscamos nuevas formas de presentar contenido, análisis y guías actualizadas.</p>
+        </div>
+        <div class="bg-[#121212] p-6 rounded-2xl border border-purple-500/30 shadow-lg hover:shadow-purple-400/20 transition">
+          <h3 class="text-xl font-bold text-purple-300 mb-2">Comunidad</h3>
+          <p class="text-gray-400 text-sm">Creemos en crear un espacio donde todos los gamers puedan interactuar y compartir experiencias.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NUESTRO EQUIPO -->
+    <section>
+      <h2 class="text-3xl font-bold text-purple-400 mb-10 text-center">Nuestro equipo</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-[#121212] p-6 rounded-2xl border border-purple-500/30 shadow-lg text-center hover:shadow-purple-400/20 transition">
+          <img src="https://images.unsplash.com/photo-1603415526960-f0b07ff40f2f" class="w-32 h-32 object-cover rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-bold text-purple-300">Juan Torres</h3>
+          <p class="text-gray-400 text-sm">Fundador & Editor Jefe</p>
+        </div>
+        <div class="bg-[#121212] p-6 rounded-2xl border border-purple-500/30 shadow-lg text-center hover:shadow-purple-400/20 transition">
+          <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a5" class="w-32 h-32 object-cover rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-bold text-purple-300">María López</h3>
+          <p class="text-gray-400 text-sm">Diseñadora UI/UX</p>
+        </div>
+        <div class="bg-[#121212] p-6 rounded-2xl border border-purple-500/30 shadow-lg text-center hover:shadow-purple-400/20 transition">
+          <img src="https://images.unsplash.com/photo-1603415526960-f0b07ff40f2f" class="w-32 h-32 object-cover rounded-full mx-auto mb-4">
+          <h3 class="text-xl font-bold text-purple-300">Carlos Pérez</h3>
+          <p class="text-gray-400 text-sm">Community Manager</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER GLOBAL -->
+  <div include-html="partials/footer.html"></div>
+
+</body>
+</html>

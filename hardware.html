@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hardware Gamer — Zona Gamer</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Include navbar + footer -->
+  <script src="js/include.js" defer></script>
+</head>
+
+<body class="bg-[#050505] text-gray-200">
+
+  <!-- NAVBAR -->
+  <div include-html="partials/navbar.html"></div>
+
+  <!-- HERO -->
+  <header class="relative h-[55vh] bg-cover bg-center"
+    style="background-image: url('https://wallpapercave.com/wp/wp6939641.jpg');">
+    <div class="absolute inset-0 bg-black/70 backdrop-blur-sm flex flex-col items-center justify-center text-center px-4">
+      <h1 class="text-5xl md:text-6xl font-extrabold text-blue-400 drop-shadow-[0_0_15px_#3b82f6]">
+        Hardware Gamer
+      </h1>
+      <p class="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl">
+        Noticias, lanzamientos, comparativas y análisis multimedia del mundo del hardware para gamers.
+      </p>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-14 space-y-24">
+
+    <!-- SECCIÓN DESTACADOS -->
+    <section>
+      <h2 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-400 drop-shadow mb-12 text-center">
+        Últimas novedades del hardware gamer
+      </h2>
+
+<div class="grid md:grid-cols-3 gap-10">
+
+  <!-- Tarjeta GPU -->
+  <article
+    class="bg-[#0b0b0b] border border-blue-800/40 rounded-2xl p-5 shadow-[0_0_20px_#1e3a8a] hover:scale-[1.04] hover:shadow-[0_0_30px_#3b82f6] transition overflow-hidden">
+
+    <img src="https://hardzone.es/app/uploads-hardzone.es/2024/09/posible-consumo-nvidia-rtx-5090.jpg"
+         class="h-48 w-full object-cover rounded-lg" />
+
+    <h3 class="text-2xl text-blue-300 font-semibold mt-4">RTX 5090 — Poder sin límites</h3>
+    <p class="text-gray-400 mt-3">
+      NVIDIA prepara su nueva generación con arquitectura potente para 4K y ray tracing extremo.
+    </p>
+
+    <!-- VIDEO RESPONSIVE -->
+    <div class="mt-3 w-full aspect-video rounded-lg overflow-hidden">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/AvHXJ2AYVw0?si=jmKOsDWUGKiqo29P"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+
+  </article>
+
+  <!-- Tarjeta CPU -->
+  <article
+    class="bg-[#0b0b0b] border border-purple-800/40 rounded-2xl p-5 shadow-[0_0_20px_#581c87] hover:scale-[1.04] hover:shadow-[0_0_30px_#c084fc] transition overflow-hidden">
+
+    <img src="https://www.amd.com/content/dam/amd/en/images/products/processors/ryzen/pia-amd-ryzen-9000-series-thumbnail.jpg"
+         class="h-48 w-full object-cover rounded-lg" />
+
+    <h3 class="text-2xl text-purple-300 font-semibold mt-4">Ryzen 9000 Series</h3>
+    <p class="text-gray-400 mt-3">
+      Rendimiento extremo para gaming y streaming con núcleos Zen 5.
+    </p>
+
+    <!-- VIDEO RESPONSIVE -->
+    <div class="mt-3 w-full aspect-video rounded-lg overflow-hidden">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/eM67zkeAV-E?si=mXpOt5aHm48wbCTW"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+
+  </article>
+
+  <!-- Tarjeta Monitores -->
+  <article
+    class="bg-[#0b0b0b] border border-cyan-800/40 rounded-2xl p-5 shadow-[0_0_20px_#155e75] hover:scale-[1.04] hover:shadow-[0_0_30px_#06b6d4] transition overflow-hidden">
+
+    <img src="https://cyccomputer.pe/55354-large_default/monitor-led-27-asus-rog-swift-360hz-pg27aqn-2560x1440-hdmi-dp-1ms360hznvidia-g-sync-pn90lm0820-b013b0.jpg"
+         class="h-48 w-full object-cover rounded-lg" />
+
+    <h3 class="text-2xl text-cyan-300 font-semibold mt-4">Monitores 360Hz</h3>
+    <p class="text-gray-400 mt-3">
+      Fluidez extrema para eSports y gaming competitivo de alta velocidad.
+    </p>
+
+    <!-- VIDEO RESPONSIVE -->
+    <div class="mt-3 w-full aspect-video rounded-lg overflow-hidden">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/vwUOFFY--Hs?si=gftX8DBIKP71vbse"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+
+  </article>
+
+</div>
+
+    </section>
+
+    <!-- SECCIÓN COMPARATIVAS INTERACTIVAS -->
+    <section>
+      <h2 class="text-3xl font-extrabold text-purple-400 drop-shadow mb-10 text-center">Comparativas populares</h2>
+
+<div class="grid md:grid-cols-2 gap-10">
+
+  <!-- Tarjeta 1 -->
+  <div
+    class="bg-[#0b0b0b] border border-purple-700/40 rounded-2xl p-6 shadow-[0_0_20px_#4c1d95] hover:scale-[1.04] hover:shadow-[0_0_30px_#a855f7] transition">
+
+    <h3 class="text-2xl text-purple-300 font-bold mb-3">RTX 4080 Super vs RTX 4090</h3>
+
+    <ul class="text-gray-400 list-disc list-inside mb-4">
+      <li>4080 Super: Mejor relación precio/rendimiento.</li>
+      <li>4090: Rendimiento extremo para 4K y ray tracing.</li>
+    </ul>
+
+    <!-- VIDEO RESPONSIVE -->
+    <div class="w-full aspect-video rounded-lg overflow-hidden">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/9xGVOsftVv4?si=CtEaAJnWpZ5G9AjE"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+
+  </div>
+
+  <!-- Tarjeta 2 -->
+  <div
+    class="bg-[#0b0b0b] border border-cyan-700/40 rounded-2xl p-6 shadow-[0_0_20px_#155e75] hover:scale-[1.04] hover:shadow-[0_0_30px_#06b6d4] transition">
+
+    <h3 class="text-2xl text-cyan-300 font-bold mb-3">Ryzen 7 9800X3D vs Intel i9 14900K</h3>
+
+    <ul class="text-gray-400 list-disc list-inside mb-4">
+      <li>Ryzen 9800X3D: Mejor relación calidad/precio.</li>
+      <li>i9 14900K: Single-core superior, ideal para gaming competitivo.</li>
+    </ul>
+
+    <!-- VIDEO RESPONSIVE -->
+    <div class="w-full aspect-video rounded-lg overflow-hidden">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/VwUrD9z1tmI?si=x15gefu3r1-9pEZ_"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+
+  </div>
+
+</div>
+
+    </section>
+
+    <!-- SECCIÓN DE TIPS AVANZADOS -->
+    <section class="bg-[#0b0b0b] border border-gray-700 p-8 rounded-2xl shadow-xl">
+      <h2 class="text-3xl font-bold text-purple-400 drop-shadow mb-6 text-center">Tips avanzados para tu setup gamer</h2>
+
+      <ul class="space-y-3 text-gray-300 list-disc list-inside">
+        <li>💡 Configura perfiles de ventiladores personalizados en BIOS.</li>
+        <li>💡 Actualiza drivers y BIOS de tus componentes para rendimiento máximo.</li>
+        <li>💡 Iluminación RGB sincronizada con software de placa base.</li>
+        <li>💡 Monitorea temperaturas y voltajes con HWInfo o MSI Afterburner.</li>
+        <li>💡 Considera un UPS o estabilizador para proteger tu hardware ante fallos eléctricos.</li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN DE GUIA RÁPIDA DE COMPRA -->
+    <section class="bg-[#0b0b0b] border border-gray-700 p-8 rounded-2xl shadow-xl">
+      <h2 class="text-3xl font-bold text-blue-400 drop-shadow mb-6 text-center">Guía rápida de compra 2025</h2>
+
+      <ul class="space-y-4 text-gray-300 list-disc list-inside">
+        <li>⚡ GPU: RTX 4080 Super o Radeon 7900 XTX.</li>
+        <li>🧊 Refrigeración: AIO 360mm para CPUs potentes.</li>
+        <li>🧠 RAM: 32GB DDR5, mínimo para gaming moderno.</li>
+        <li>⚙️ Almacenamiento: SSD NVMe Gen4 + HDD secundario.</li>
+        <li>🔌 Fuente de poder: 850W+ certificación Gold.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- DIVISOR RGB -->
+  <div class="h-4 w-full bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-400 animate-pulse opacity-80"></div>
+
+  <!-- FOOTER -->
+  <div include-html="partials/footer.html"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Software Gamer — Zona Gamer</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Include navbar + footer -->
+  <script src="js/include.js" defer></script>
+</head>
+
+<body class="bg-[#050505] text-gray-200">
+
+  <!-- NAVBAR -->
+  <div include-html="partials/navbar.html"></div>
+
+  <!-- HERO -->
+  <header class="relative h-[55vh] bg-cover bg-center"
+    style="background-image: url('https://www.redeweb.com/wp-content/uploads/2021/03/software-1.jpg ');">
+    <div class="absolute inset-0 bg-black/70 backdrop-blur-sm flex flex-col items-center justify-center text-center px-4">
+      <h1 class="text-5xl md:text-6xl font-extrabold text-purple-400 drop-shadow-[0_0_15px_#a855f7]">
+        Software Gamer
+      </h1>
+      <p class="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl">
+        Noticias, lanzamientos, guías y análisis de software para gamers.
+      </p>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-14 space-y-24">
+
+<!-- SECCIÓN DESTACADOS -->
+<section>
+  <h2 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-400 drop-shadow mb-12 text-center">
+    Últimos lanzamientos y guías de software
+  </h2>
+
+  <!-- CARRUSEL DE SOFTWARE / VIDEOS -->
+  <div class="overflow-x-auto flex gap-6 snap-x snap-mandatory pb-6">
+
+    <!-- Tarjeta 1 -->
+    <div class="min-w-[300px] bg-[#0b0b0b] rounded-2xl p-4 shadow-lg border border-purple-700/40 snap-start flex-shrink-0">
+      <img src="https://cdn.mos.cms.futurecdn.net/56DCasscyztF589Utiqy9i.jpg" class="h-40 w-full object-cover rounded-lg" />
+      <h3 class="text-xl font-bold text-purple-300 mt-3">Steam Deck UI Update</h3>
+      <p class="text-gray-400 text-sm mt-1">Nueva interfaz más fluida y personalizable para tu Steam Deck.</p>
+
+      <!-- VIDEO RESPONSIVE -->
+      <div class="w-full aspect-video rounded-lg overflow-hidden mt-3">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/JhTvaRogQp8?si=asXpZt3IDxiEAArO"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="min-w-[300px] bg-[#0b0b0b] rounded-2xl p-4 shadow-lg border border-purple-700/40 snap-start flex-shrink-0">
+      <img src="https://cdn.neowin.com/news/images/uploaded/2023/11/1699807063_obs_studio_hero.jpg" class="h-40 w-full object-cover rounded-lg" />
+      <h3 class="text-xl font-bold text-purple-300 mt-3">OBS Studio 30.0</h3>
+      <p class="text-gray-400 text-sm mt-1">Mejor rendimiento, nuevas herramientas de streaming y grabación.</p>
+
+      <!-- VIDEO RESPONSIVE -->
+      <div class="w-full aspect-video rounded-lg overflow-hidden mt-3">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/tj6f9jtbugw?si=ELEieyz3gQyPxoei"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="min-w-[300px] bg-[#0b0b0b] rounded-2xl p-4 shadow-lg border border-purple-700/40 snap-start flex-shrink-0">
+      <img src="https://www.nvidia.com/content/dam/en-zz/Solutions/software/nvidia-app/nvidia-app-oct24-og-1200x630.jpg" class="h-40 w-full object-cover rounded-lg" />
+      <h3 class="text-xl font-bold text-purple-300 mt-3">NVIDIA GeForce Experience 2025</h3>
+      <p class="text-gray-400 text-sm mt-1">Actualizaciones automáticas, nuevas optimizaciones para juegos y streaming.</p>
+
+      <!-- VIDEO RESPONSIVE -->
+      <div class="w-full aspect-video rounded-lg overflow-hidden mt-3">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/f5R3OHUDY7g?si=GwG5b4Oi49tNURnw"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- SECCIÓN GUIA DE SOFTWARE -->
+    <section class="bg-[#0b0b0b] border border-gray-700 p-8 rounded-2xl shadow-xl">
+      <h2 class="text-3xl font-bold text-purple-400 drop-shadow mb-6 text-center">Guía rápida de software para gamers</h2>
+
+      <ul class="space-y-4 text-gray-300 list-disc list-inside">
+        <li>🎮 <strong>Plataformas de juegos:</strong> Steam, Epic Games Store, GOG.</li>
+        <li>📺 <strong>Streaming:</strong> OBS Studio, Streamlabs, NVIDIA Broadcast.</li>
+        <li>🔧 <strong>Optimización:</strong> GeForce Experience, AMD Radeon Software.</li>
+        <li>🛡️ <strong>Seguridad:</strong> Windows Defender, Malwarebytes y VPNs confiables.</li>
+        <li>⚡ <strong>Productividad:</strong> Discord, VoiceMeeter, software de captura de pantalla.</li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN TIPS AVANZADOS -->
+    <section class="bg-[#0b0b0b] border border-gray-700 p-8 rounded-2xl shadow-xl">
+      <h2 class="text-3xl font-bold text-purple-400 drop-shadow mb-6 text-center">Tips avanzados de software</h2>
+
+      <ul class="space-y-3 text-gray-300 list-disc list-inside">
+        <li>💡 Configura atajos de teclado para acciones rápidas en streaming.</li>
+        <li>💡 Usa perfiles de gráficos y rendimiento en GeForce Experience o Radeon Software.</li>
+        <li>💡 Sincroniza RGB de software compatible con tu PC para estética uniforme.</li>
+        <li>💡 Mantén tus drivers actualizados para mejorar FPS y estabilidad.</li>
+        <li>💡 Monitorea temperatura y uso de GPU/CPU mientras juegas con software como MSI Afterburner.</li>
+      </ul>
+    </section>
+
+    <!-- SECCIÓN DE COMPARATIVAS DE SOFTWARE -->
+<section>
+  <h2 class="text-3xl font-extrabold text-purple-400 drop-shadow mb-10 text-center">
+    Comparativas de software
+  </h2>
+
+  <div class="grid md:grid-cols-2 gap-10">
+
+    <!-- Comparativa OBS / Streamlabs -->
+    <div class="bg-[#0b0b0b] border border-purple-700/40 rounded-2xl p-6 shadow-[0_0_20px_#4c1d95] hover:scale-[1.04] hover:shadow-[0_0_30px_#a855f7] transition">
+      <h3 class="text-2xl text-purple-300 font-bold mb-3">OBS Studio vs Streamlabs</h3>
+      <ul class="text-gray-400 list-disc list-inside mb-3">
+        <li>OBS: Más ligero, personalizable, gratis.</li>
+        <li>Streamlabs: Integración con alertas, widgets y monetización.</li>
+      </ul>
+
+      <!-- VIDEO RESPONSIVE -->
+      <div class="w-full aspect-video rounded-lg overflow-hidden mt-3">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/OIGE9PEnJaY?si=4e7Bi1Ew3xhA3IJE"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Comparativa GeForce / Radeon -->
+    <div class="bg-[#0b0b0b] border border-cyan-700/40 rounded-2xl p-6 shadow-[0_0_20px_#155e75] hover:scale-[1.04] hover:shadow-[0_0_30px_#06b6d4] transition">
+      <h3 class="text-2xl text-cyan-300 font-bold mb-3">GeForce Experience vs AMD Radeon Software</h3>
+      <ul class="text-gray-400 list-disc list-inside mb-3">
+        <li>GeForce: Mejor para juegos NVIDIA, optimizaciones automáticas y DLSS.</li>
+        <li>Radeon: Mejor para AMD, rendimiento y configuraciones de FPS altas.</li>
+      </ul>
+
+      <!-- VIDEO RESPONSIVE -->
+      <div class="w-full aspect-video rounded-lg overflow-hidden mt-3">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/ChGAdw5fP8A?si=t07AM__F4v8vBeyS"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- DIVISOR RGB -->
+  <div class="h-4 w-full bg-gradient-to-r from-purple-500 via-pink-500 to-cyan-400 animate-pulse opacity-80"></div>
+
+  <!-- FOOTER -->
+  <div include-html="partials/footer.html"></div>
+
+  <script src="js/include.js"></script>
+  <script src="js/navbar.js"></script>
+
+</body>
+
+</html>

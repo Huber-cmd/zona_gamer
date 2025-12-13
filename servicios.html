@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/include.js" defer></script>
+</head>
+
+<body class="bg-gray-900">
+
+  <!-- NAVBAR -->
+  <div include-html="partials/navbar.html"></div>
+
+
+  <!-- HERO -->
+  <section class="relative">
+    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c"
+         class="h-[360px] w-full object-cover opacity-30">
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+      <h1 class="text-5xl font-extrabold text-purple-400 drop-shadow-lg">Nuestros Servicios</h1>
+      <p class="mt-4 max-w-2xl text-gray-200">
+        Ofrecemos soluciones tecnológicas, desarrollo de software y contenido gamer.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- SERVICIOS PRINCIPALES -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="text-4xl font-bold text-purple-400 text-center">Soluciones Profesionales</h2>
+
+    <div class="grid md:grid-cols-3 gap-12 mt-14">
+
+      <!-- Servicio 1 -->
+      <div class="bg-gray-800 p-6 rounded-2xl shadow-xl border border-gray-700 hover:-translate-y-1 transition">
+        <img src="https://images.unsplash.com/photo-1559027615-ce3b37a1ea2b"
+             class="rounded-xl h-48 w-full object-cover mb-4">
+        <h3 class="text-xl font-semibold">Diseño UX/UI</h3>
+        <p class="text-gray-300 mt-2">
+          Interfaz atractiva, moderna y optimizada para una experiencia fluida.
+        </p>
+      </div>
+
+      <!-- Servicio 2 -->
+      <div class="bg-gray-800 p-6 rounded-2xl shadow-xl border border-gray-700 hover:-translate-y-1 transition">
+        <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07"
+             class="rounded-xl h-48 w-full object-cover mb-4">
+        <h3 class="text-xl font-semibold">Desarrollo Web</h3>
+        <p class="text-gray-300 mt-2">
+          Sitios web rápidos, escalables y con tecnologías modernas.
+        </p>
+      </div>
+
+      <!-- Servicio 3 -->
+      <div class="bg-gray-800 p-6 rounded-2xl shadow-xl border border-gray-700 hover:-translate-y-1 transition">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+             class="rounded-xl h-48 w-full object-cover mb-4">
+        <h3 class="text-xl font-semibold">Consultoría</h3>
+        <p class="text-gray-300 mt-2">
+          Evaluamos tus necesidades tecnológicas y proponemos soluciones.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECCIÓN EXTRA: PLANES TECNOLÓGICOS -->
+  <section class="bg-gray-950 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <h2 class="text-4xl font-bold text-purple-300 text-center">Planes Tecnológicos</h2>
+
+      <div class="grid md:grid-cols-3 gap-10 mt-14">
+
+        <!-- Básico -->
+        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 shadow-xl">
+          <h3 class="text-2xl font-bold text-purple-400">Plan Básico</h3>
+          <p class="text-gray-300 mt-3">Ideal para pequeños proyectos.</p>
+          <ul class="mt-4 text-gray-400 space-y-2">
+            <li>✔ Página web simple</li>
+            <li>✔ Soporte estándar</li>
+            <li>✔ Hosting inicial</li>
+          </ul>
+        </div>
+
+        <!-- Intermedio -->
+        <div class="bg-purple-600 p-8 rounded-2xl shadow-xl border border-purple-400 scale-105">
+          <h3 class="text-2xl font-bold">Plan Profesional</h3>
+          <p class="mt-3">El más solicitado por empresas.</p>
+          <ul class="mt-4 space-y-2">
+            <li>✔ Web corporativa</li>
+            <li>✔ UX/UI profesional</li>
+            <li>✔ SEO + Analítica</li>
+            <li>✔ Actualizaciones</li>
+          </ul>
+        </div>
+
+        <!-- Avanzado -->
+        <div class="bg-gray-800 p-8 rounded-2xl border border-gray-700 shadow-xl">
+          <h3 class="text-2xl font-bold text-purple-400">Plan Avanzado</h3>
+          <p class="text-gray-300 mt-3">Para soluciones personalizadas.</p>
+          <ul class="mt-4 text-gray-400 space-y-2">
+            <li>✔ Apps móviles</li>
+            <li>✔ Sistemas a medida</li>
+            <li>✔ Hosting dedicado</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- GALERÍA DE PROYECTOS -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="text-4xl font-bold text-purple-400 text-center">Proyectos Recientes</h2>
+
+    <div class="grid md:grid-cols-3 gap-10 mt-14">
+      <img src="https://images.unsplash.com/photo-1535303311164-664fc9ec6532"
+           class="rounded-xl shadow-lg border border-gray-700">
+      <img src="https://images.unsplash.com/photo-1581093602967-106cc716cb1c"
+           class="rounded-xl shadow-lg border border-gray-700">
+      <img src="https://images.unsplash.com/photo-1580870069867-74c57ee1bb07"
+           class="rounded-xl shadow-lg border border-gray-700">
+    </div>
+  </section>
+
+  <!-- DIVISOR GAMER -->
+<div class="h-6 w-full bg-gradient-to-r from-purple-600 via-fuchsia-500 to-purple-600 opacity-70"></div>
+
+  <!-- FOOTER -->
+  <div include-html="partials/footer.html"></div>
+
+  <script src="js/include.js"></script>
+  <script src="js/navbar.js"></script> 
+
+
+</body>
+</html>

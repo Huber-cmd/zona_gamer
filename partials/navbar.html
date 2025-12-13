@@ -1,0 +1,94 @@
+<nav class="fixed top-0 left-0 w-full bg-gray-900 shadow-lg z-50">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+
+    <!-- LOGO -->
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="https://cdn-icons-png.flaticon.com/512/10682/10682563.png"
+           alt="logo"
+           class="w-10 h-10">
+      <h1 class="text-xl font-extrabold text-purple-400">GamerNews</h1>
+    </a>
+
+    <!-- MENÚ PC -->
+    <ul class="hidden md:flex gap-8 text-gray-200 font-semibold items-center">
+
+      <li><a href="index.html" class="hover:text-purple-400">Inicio</a></li>
+
+<!-- DROPDOWN JUEGOS -->
+<li class="relative group cursor-pointer">
+
+  <!-- ZONA DE HOVER SEGURA -->
+  <div class="py-3 px-2 hover:text-purple-400">Juegos ▾</div>
+
+  <!-- CONTENIDO DROPDOWN con zona expandida -->
+  <div class="absolute left-0 w-52 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+              transition-all duration-200">
+
+    <!-- Área "puente" invisible que evita que se cierre mientras bajas el mouse -->
+    <div class="h-3 w-full"></div>
+
+    <!-- Caja real del menú -->
+    <div class="bg-gray-800 border border-gray-700 rounded-xl shadow-xl py-2">
+      <a href="juegos.html" class="block px-4 py-2 hover:bg-gray-700">Noticias</a>
+      <a href="estrenos.html" class="block px-4 py-2 hover:bg-gray-700">Estrenos</a>
+      <a href="esports.html" class="block px-4 py-2 hover:bg-gray-700">E-sports</a>
+      <a href="free.html" class="block px-4 py-2 hover:bg-gray-700">Free-to-play</a>
+    </div>
+
+  </div>
+
+</li>
+
+      <li><a href="consolas.html" class="hover:text-purple-400">Consolas</a></li>
+      <li><a href="hardware.html" class="hover:text-purple-400">Hardware</a></li>
+      <li><a href="software.html" class="hover:text-purple-400">Software</a></li>
+      <li><a href="reviews.html" class="hover:text-purple-400">Reviews</a></li>
+      <li><a href="guias.html" class="hover:text-purple-400">Guías</a></li>
+      <li><a href="contacto.html" class="hover:text-purple-400">Contacto</a></li>
+
+    </ul>
+
+    <!-- BOTÓN MÓVIL -->
+    <button id="menuBtn" class="md:hidden text-white text-3xl">☰</button>
+
+  </div>
+
+  <!-- MENÚ MÓVIL -->
+  <div id="mobileMenu" class="hidden bg-gray-800 px-6 pb-4 md:hidden">
+    <ul class="flex flex-col gap-4 text-gray-200 font-semibold">
+      
+      <li><a href="index.html">Inicio</a></li>
+
+      <!-- DROPDOWN MÓVIL -->
+      <li>
+        <button id="dropMobileBtn" class="w-full text-left">Juegos ▾</button>
+        <div id="dropMobile" class="hidden ml-4 mt-2 flex flex-col gap-2">
+          <a href="juegos.html" class="hover:text-purple-400">Noticias</a>
+          <a href="estrenos.html" class="hover:text-purple-400">Estrenos</a>
+          <a href="esports.html" class="hover:text-purple-400">E-sports</a>
+          <a href="free.html" class="hover:text-purple-400">Free-to-play</a>
+        </div>
+      </li>
+
+      <li><a href="consolas.html">Consolas</a></li>
+      <li><a href="hardware.html">Hardware</a></li>
+      <li><a href="software.html">Software</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="guias.html">Guías</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+
+    </ul>
+  </div>
+
+  <script>
+    // Menu móvil
+    const btn = document.getElementById("menuBtn");
+    const menu = document.getElementById("mobileMenu");
+    btn.onclick = () => menu.classList.toggle("hidden");
+
+    // Dropdown móvil
+    const dropBtn = document.getElementById("dropMobileBtn");
+    const drop = document.getElementById("dropMobile");
+    dropBtn.onclick = () => drop.classList.toggle("hidden");
+  </script>
+</nav>

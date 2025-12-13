@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reviews - Análisis Gamer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#0a0a0a] text-gray-200">
+
+  <!-- NAVBAR GLOBAL -->
+  <div include-html="partials/navbar.html"></div>
+
+  <!-- HERO -->
+  <section class="h-72 bg-[url('https://images.unsplash.com/photo-1605902711622-cfb43c44367b')] 
+      bg-cover bg-center flex items-center justify-center relative">
+    <div class="absolute inset-0 bg-black/70"></div>
+    <h1 class="relative text-5xl font-extrabold text-purple-400 drop-shadow-xl">
+      Reviews – Análisis a Fondo
+    </h1>
+  </section>
+
+  <main class="max-w-6xl mx-auto px-6 py-12 space-y-20">
+
+<!-- GRID DE REVIEWS -->
+<section>
+  <h2 class="text-3xl font-bold text-purple-400 mb-8 text-center">
+    Últimos análisis gamer
+  </h2>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- REVIEW CARD 1 -->
+    <article class="bg-[#121212] rounded-xl border border-purple-500/30 hover:border-purple-400 
+        hover:shadow-purple-400/20 duration-300 p-5">
+      <img src="https://f.rpp-noticias.io/2023/09/24/472547_1479142.jpg?width=1020&quality=80"
+           class="h-44 w-full object-cover rounded-lg mb-4">
+
+      <h3 class="text-xl font-bold text-purple-300 mb-1">Cyberpunk 2077 – Phantom Liberty</h3>
+      <div class="flex items-center gap-1 mb-3">
+        <span class="text-yellow-400 text-lg">★ ★ ★ ★ ☆</span>
+        <span class="text-gray-400 text-sm">(4.5/5)</span>
+      </div>
+
+      <p class="text-gray-400 text-sm mb-3">
+        Una expansión que mejora todo lo que el juego prometió: historia profunda, gameplay pulido
+        y un rendimiento finalmente sólido.
+      </p>
+
+      <!-- VIDEO RESPONSIVE -->
+      <div class="w-full aspect-video rounded-lg overflow-hidden">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/34OwJeFfHLU?si=BXknt8iykP5RwbHP"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <!-- REVIEW CARD 2 -->
+    <article class="bg-[#121212] rounded-xl border border-purple-500/30 hover:border-purple-400 
+        hover:shadow-purple-400/20 duration-300 p-5">
+      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/553850/d6cdf5a30e1e195b3ac80d4b9f8080a66d707381/page_bg_raw.jpg?t=1763568660"
+           class="h-44 w-full object-cover rounded-lg mb-4">
+
+      <h3 class="text-xl font-bold text-purple-300 mb-1">Helldivers 2</h3>
+      <div class="flex items-center gap-1 mb-3">
+        <span class="text-yellow-400 text-lg">★ ★ ★ ★ ★</span>
+        <span class="text-gray-400 text-sm">(5/5)</span>
+      </div>
+
+      <p class="text-gray-400 text-sm mb-3">
+        Acción cooperativa frenética, humor absurdo y una comunidad activa lo convierten en uno
+        de los mejores juegos del año.
+      </p>
+
+      <!-- VIDEO RESPONSIVE -->
+      <div class="w-full aspect-video rounded-lg overflow-hidden">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/O827A3v80Go?si=xcYnl2bFqyJvhaHz"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </article>
+
+    <!-- REVIEW CARD 3 -->
+    <article class="bg-[#121212] rounded-xl border border-purple-500/30 hover:border-purple-400 
+        hover:shadow-purple-400/20 duration-300 p-5">
+      <img src="https://image.api.playstation.com/vulcan/ap/rnd/202310/1616/7dfe05cc56bbe68b29038194fe09cff0b2218cc186496a8f.jpg"
+           class="h-44 w-full object-cover rounded-lg mb-4">
+
+      <h3 class="text-xl font-bold text-purple-300 mb-1">Assassin's Creed Mirage</h3>
+      <div class="flex items-center gap-1 mb-3">
+        <span class="text-yellow-400 text-lg">★ ★ ★ ☆ ☆</span>
+        <span class="text-gray-400 text-sm">(3/5)</span>
+      </div>
+
+      <p class="text-gray-400 text-sm mb-3">
+        Vuelve a las raíces, pero sin innovar lo suficiente. Una experiencia sólida, pero no sorprendente.
+      </p>
+
+      <!-- VIDEO RESPONSIVE -->
+      <div class="w-full aspect-video rounded-lg overflow-hidden">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/rFk-c1E3iPo?si=VgqH6MC-jS-64rr_"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+<!-- SECCIÓN DESTACADOS -->
+<section>
+  <h2 class="text-3xl font-bold text-purple-400 mb-6 text-center">Análisis destacados</h2>
+
+  <div class="space-y-8">
+
+    <!-- CARD 1 -->
+    <div class="bg-gradient-to-r from-purple-900/40 to-purple-600/20 p-6 rounded-xl border border-purple-500/40">
+      <h3 class="text-2xl font-semibold text-purple-300 mb-2">
+        ¿Es Baldur’s Gate 3 el mejor RPG de los últimos años?
+      </h3>
+      <p class="text-gray-300 mb-3">
+        Con libertad total de decisiones, una narrativa profunda y combates tácticos, Baldur’s Gate 3
+        redefine lo que un RPG moderno puede ser.
+      </p>
+
+      <!-- VIDEO RESPONSIVE -->
+      <div class="w-full aspect-video rounded-lg overflow-hidden">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/4YjOGGtt51s?si=Er70DpVKNRoBo8VZ"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="bg-gradient-to-r from-purple-900/40 to-purple-600/20 p-6 rounded-xl border border-purple-500/40">
+      <h3 class="text-2xl font-semibold text-purple-300 mb-2">
+        Review técnica: rendimiento de los juegos en GPUs 2024-2025
+      </h3>
+      <p class="text-gray-300 mb-3">
+        Pruebas reales muestran que DLSS 3 sigue siendo la mejor tecnología de escalado,
+        superando con ventaja a FSR 3 en la mayoría de títulos.
+      </p>
+
+      <!-- VIDEO RESPONSIVE -->
+      <div class="w-full aspect-video rounded-lg overflow-hidden">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/NTuXff1p5uo?si=_9nc2iZNBS4IAoID"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- SECCIÓN TIPS Y RECOMENDACIONES -->
+    <section class="bg-[#121212] border border-purple-500/20 p-6 rounded-xl shadow-md">
+      <h2 class="text-3xl font-bold text-purple-400 mb-4 text-center">Tips y recomendaciones</h2>
+      <ul class="list-disc list-inside text-gray-300 space-y-2">
+        <li>💡 Mejora el rendimiento ajustando gráficos y resolución en cada juego.</li>
+        <li>💡 Mantén drivers actualizados para evitar bugs y crashes.</li>
+        <li>💡 Prueba mods que mejoren la experiencia sin comprometer estabilidad.</li>
+        <li>💡 Configura accesos rápidos y controles personalizados para cada juego.</li>
+        <li>💡 Consulta benchmarks de hardware antes de actualizar tu PC.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- FOOTER GLOBAL -->
+  <div include-html="partials/footer.html"></div>
+
+  <!-- SCRIPT include.js -->
+  <script src="js/include.js"></script>
+
+</body>
+</html>

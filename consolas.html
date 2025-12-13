@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consolas - Zona Gamer</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Script para incluir navbar y footer -->
+  <script src="js/include.js" defer></script>
+
+  <style>
+    /* Glow Animado RGB */
+    @keyframes rgbGlow {
+      0% { box-shadow: 0 0 15px #ff0080; }
+      33% { box-shadow: 0 0 15px #00eaff; }
+      66% { box-shadow: 0 0 15px #8aff00; }
+      100% { box-shadow: 0 0 15px #ff0080; }
+    }
+  </style>
+</head>
+
+<body class="bg-[#050505] text-gray-200">
+
+  <!-- NAVBAR -->
+  <div include-html="partials/navbar.html"></div>
+
+  <!-- HERO -->
+  <section class="relative h-[60vh] flex items-center justify-center">
+    <img src="https://larepublica.cronosmedia.glr.pe/migration/images/V5X4DFIGVBCVRNBOJ367EK72OA.jpg"
+         class="absolute w-full h-full object-cover opacity-30" />
+
+    <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/90 backdrop-blur-sm"></div>
+
+    <div class="relative text-center">
+      <h1 class="text-6xl font-extrabold text-white drop-shadow-[0_0_20px_#00eaff]">
+        Consolas • PlayStation • Xbox • Nintendo
+      </h1>
+      <p class="mt-4 text-xl text-gray-300 max-w-2xl mx-auto">
+        Noticias, novedades, análisis y tendencias del universo gamer.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTENIDO -->
+  <main class="max-w-6xl mx-auto px-6 py-14 space-y-20">
+
+    <!-- PLAYSTATION -->
+    <section>
+      <h3 class="text-3xl font-bold text-blue-400 drop-shadow-[0_0_10px_#3b82f6] mb-6">
+        PlayStation
+      </h3>
+<div class="grid md:grid-cols-2 gap-10">
+
+  <!-- Tarjeta 1 -->
+  <div class="bg-[#0d0d0d] border border-blue-800/40 rounded-2xl p-5 
+              shadow-[0_0_20px_#1e3a8a] hover:scale-105 transition 
+              hover:shadow-[0_0_30px_#3b82f6]">
+
+    <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/12/11/17022938196238.jpg" class="rounded-lg mb-4">
+
+    <h4 class="text-2xl font-semibold text-blue-300">PlayStation 5 Pro filtrada</h4>
+    <p class="text-gray-400 mt-3">
+      Rendimiento extremo en 4K y mejoras gráficas importantes.
+    </p>
+
+    <!-- VIDEO RESPONSIVE -->
+    <div class="w-full aspect-video mt-4 rounded-lg overflow-hidden">
+      <iframe 
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/OTLG3YOgWIE?si=878y244ExxEzZlDR"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- Tarjeta 2 -->
+  <div class="bg-[#0d0d0d] border border-blue-800/40 rounded-2xl p-5 
+              shadow-[0_0_20px_#1e3a8a] hover:scale-105 transition 
+              hover:shadow-[0_0_30px_#3b82f6]">
+
+    <img src="https://img.asmedia.epimg.net/resizer/v2/BBB32Q23OVHXPLBGJCQBGZNGIY.png?auth=531402bea7d5dd18e85dbee50ccfa08589ea1001825cc228d0535a3447cf5ce3&width=1472&height=828&smart=true" class="rounded-lg mb-4">
+
+    <h4 class="text-2xl font-semibold text-blue-300">Nuevos exclusivos anunciados</h4>
+    <p class="text-gray-400 mt-3">
+      Sony prepara exclusivos potentes para 2025.
+    </p>
+
+    <!-- VIDEO RESPONSIVE -->
+    <div class="w-full aspect-video mt-4 rounded-lg overflow-hidden">
+      <iframe 
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/QLG2rxVhUoA?si=3TUWXWJanISUUF4X"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+
+</div>
+
+
+      <!-- Tips PlayStation -->
+      <div class="mt-6 bg-[#0d0d0d] border border-blue-800/30 p-5 rounded-xl text-gray-300">
+        <h5 class="text-xl font-semibold text-blue-300 mb-2">Tips PlayStation</h5>
+        <ul class="list-disc list-inside space-y-1">
+          <li>💡 Ajusta HDR y resolución 4K para mejor experiencia visual.</li>
+          <li>💡 Suscríbete a PS Plus para acceso a juegos mensuales gratuitos.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- XBOX -->
+    <section>
+      <h3 class="text-3xl font-bold text-green-400 drop-shadow-[0_0_10px_#22c55e] mb-6">
+        Xbox
+      </h3>
+<div class="grid md:grid-cols-2 gap-10">
+
+  <!-- Tarjeta 1 -->
+  <div class="bg-[#0d0d0d] border border-green-800/40 rounded-2xl p-5 
+              shadow-[0_0_20px_#064e3b] hover:scale-105 transition 
+              hover:shadow-[0_0_30px_#22c55e]">
+
+    <img src="https://areajugones.sport.es/wp-content/uploads/2025/10/xbox-nueva-1560x880.jpg.webp" class="rounded-lg mb-4">
+
+    <h4 class="text-2xl font-semibold text-green-300">Xbox Series Y rumores</h4>
+    <p class="text-gray-400 mt-3">
+      Diseño más eficiente, ecológico y económico.
+    </p>
+
+    <!-- VIDEO RESPONSIVE -->
+    <div class="w-full aspect-video rounded-lg overflow-hidden mt-4">
+      <iframe 
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/brhuBCOdgjI?si=GYlLUI6KuaAufDiO"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- Tarjeta 2 -->
+  <div class="bg-[#0d0d0d] border border-green-800/40 rounded-2xl p-5 
+              shadow-[0_0_20px_#064e3b] hover:scale-105 transition 
+              hover:shadow-[0_0_30px_#22c55e]">
+
+    <img src="https://nosdicengamers.com/wp-content/uploads/2025/05/retro-classics-gamepass-activisi-1024x576.jpg" class="rounded-lg mb-4">
+
+    <h4 class="text-2xl font-semibold text-green-300">Game Pass suma más juegos</h4>
+    <p class="text-gray-400 mt-3">
+      Nuevos títulos AAA llegan al servicio estrella de Xbox.
+    </p>
+
+    <!-- VIDEO RESPONSIVE -->
+    <div class="w-full aspect-video rounded-lg overflow-hidden mt-4">
+      <iframe 
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/tSE6GxTAaL4?si=0ugwTnqdlDtDwtP1"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+
+</div>
+
+
+      <!-- Tips Xbox -->
+      <div class="mt-6 bg-[#0d0d0d] border border-green-800/30 p-5 rounded-xl text-gray-300">
+        <h5 class="text-xl font-semibold text-green-300 mb-2">Tips Xbox</h5>
+        <ul class="list-disc list-inside space-y-1">
+          <li>💡 Activa Auto HDR para mejor contraste en juegos retro.</li>
+          <li>💡 Aprovecha Game Pass Ultimate para jugar en PC y consola.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- NINTENDO -->
+    <section>
+      <h3 class="text-3xl font-bold text-red-400 drop-shadow-[0_0_10px_#dc2626] mb-6">
+        Nintendo
+      </h3>
+<div class="grid md:grid-cols-2 gap-10">
+
+  <!-- Tarjeta 1 -->
+  <div class="bg-[#0d0d0d] border border-red-800/40 rounded-2xl p-5 
+              shadow-[0_0_20px_#7f1d1d] hover:scale-105 transition 
+              hover:shadow-[0_0_30px_#dc2626]">
+
+    <img src="https://www.nintendo.com/eu/media/images/news_12/2025/april_31/atd_vol_16/2x1_AtD16_Names_ES_es.jpg" class="rounded-lg mb-4">
+
+    <h4 class="text-2xl font-semibold text-red-300">Nintendo Switch 2 en desarrollo</h4>
+    <p class="text-gray-400 mt-3">
+      Hardware renovado y mayor rendimiento según rumores.
+    </p>
+
+    <!-- VIDEO RESPONSIVE -->
+    <div class="w-full aspect-video rounded-lg overflow-hidden mt-4">
+      <iframe 
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/3q9dn3QRda8?si=038et1RD-viA2ebD"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- Tarjeta 2 -->
+  <div class="bg-[#0d0d0d] border border-red-800/40 rounded-2xl p-5 
+              shadow-[0_0_20px_#7f1d1d] hover:scale-105 transition 
+              hover:shadow-[0_0_30px_#dc2626]">
+
+    <img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70070000000041/794b7a03fa218348fcf9930abae5ca90fe664e81da7019d3b0a08e94feae6e31" class="rounded-lg mb-4">
+
+    <h4 class="text-2xl font-semibold text-red-300">Nueva expansión de Zelda</h4>
+    <p class="text-gray-400 mt-3">
+      Más aventuras en Hyrule con nuevo contenido.
+    </p>
+
+    <!-- VIDEO RESPONSIVE -->
+    <div class="w-full aspect-video rounded-lg overflow-hidden mt-4">
+      <iframe 
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/62pm115qWlA?si=lsMtlqKZv430BHWW"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+
+</div>
+
+
+      <!-- Tips Nintendo -->
+      <div class="mt-6 bg-[#0d0d0d] border border-red-800/30 p-5 rounded-xl text-gray-300">
+        <h5 class="text-xl font-semibold text-red-300 mb-2">Tips Nintendo</h5>
+        <ul class="list-disc list-inside space-y-1">
+          <li>💡 Aprovecha los modos portátiles de Switch para jugar donde quieras.</li>
+          <li>💡 Consulta demos y betas antes de comprar nuevos juegos.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- DIVISOR RGB -->
+  <div class="h-4 w-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-pulse opacity-80"></div>
+
+  <!-- FOOTER -->
+  <div include-html="partials/footer.html"></div>
+
+  <script src="js/include.js"></script>
+  <script src="js/navbar.js"></script>
+
+</body>
+</html>

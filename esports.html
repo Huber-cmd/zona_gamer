@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Sports</title>
+
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Includes -->
+  <script src="js/include.js" defer></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+  <!-- NAVBAR -->
+  <div include-html="partials/navbar.html"></div>
+
+  <!-- HERO ESPORTS -->
+  <section class="relative">
+    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420"
+         class="w-full h-[360px] object-cover opacity-25">
+
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+      <h1 class="text-5xl font-extrabold text-purple-500 drop-shadow-lg">
+        E-Sports: Competencia al Máximo
+      </h1>
+      <p class="mt-4 max-w-2xl text-gray-200 text-lg">
+        Noticias, torneos, equipos y el mundo competitivo del gaming.
+      </p>
+    </div>
+  </section>
+
+  <!-- NOTICIAS ESPORTS -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="text-4xl font-bold text-purple-400 text-center">Noticias eSports</h2>
+
+    <div class="grid md:grid-cols-3 gap-10 mt-14">
+      
+      <!-- Noticia 1 -->
+      <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 shadow-lg hover:-translate-y-1 transition">
+        <img src="https://www.riotgames.com/darkroom/1440/1b95a9a8323987fba31b58280e6d2b03:c23ebc7ecced8ef6d853b9ca114f91c5/worlds2025-find-a-worlds-watch-party-near-you.png"
+             class="rounded-xl h-48 w-full object-cover">
+        <h3 class="mt-4 text-xl font-semibold">League of Legends Worlds 2025</h3>
+        <p class="text-gray-300 mt-2 text-sm">
+          Equipos de todo el mundo se preparan para la mayor cita de LoL.
+        </p>
+      </div>
+
+      <!-- Noticia 2 -->
+      <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 shadow-lg hover:-translate-y-1 transition">
+        <img src="https://s.starladder.com/uploads/ckeditor/elfinder/CS2/KV_1920x1080.png"
+             class="rounded-xl h-48 w-full object-cover">
+        <h3 class="mt-4 text-xl font-semibold">CS2 Major 2025</h3>
+        <p class="text-gray-300 mt-2 text-sm">
+          El Major promete ser uno de los más competitivos de la saga.
+        </p>
+      </div>
+
+      <!-- Noticia 3 -->
+      <div class="bg-gray-800 border border-gray-700 rounded-2xl p-6 shadow-lg hover:-translate-y-1 transition">
+        <img src="https://i.ytimg.com/vi/HPoTlFXWg7o/maxresdefault.jpg"
+             class="rounded-xl h-48 w-full object-cover">
+        <h3 class="mt-4 text-xl font-semibold">Valorant Champions Tour</h3>
+        <p class="text-gray-300 mt-2 text-sm">
+          Riot anuncia nuevas sedes internacionales para los playoffs.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Sports — GameWorld</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Script para cargar navbar y footer -->
+  <script src="/miweb/js/include.js" defer></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- NAVBAR -->
+  <div data-include="/miweb/partials/navbar.html"></div>
+
+  <!-- HERO -->
+  <header class="relative h-72 bg-cover bg-center"
+    style="background-image: url('https://images.unsplash.com/photo-1551434678-e076c223a692');">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg">
+        E-Sports • Competencias & Escena Profesional
+      </h1>
+    </div>
+  </header>
+
+<!-- CONTENIDO PRINCIPAL -->
+<main class="max-w-6xl mx-auto px-4 py-10">
+
+  <h2 class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-8 text-center drop-shadow-lg">
+    Noticias Recientes de E-Sports
+  </h2>
+
+  <!-- GRID DE NOTICIAS -->
+  <div class="grid md:grid-cols-3 gap-8">
+
+    <!-- TARJETA 1 -->
+    <article class="bg-[#0d0d0d] rounded-2xl shadow-[0_0_20px_#3b82f6] hover:shadow-[0_0_30px_#3b82f6] transition overflow-hidden border border-blue-800/40">
+      <img src="https://egamersworld.com/cdn-cgi/image/width=690,quality=75,format=webp/uploads/blog/1/17/1759249238860_1759249238860.webp"
+           class="h-48 w-full object-cover" alt="Torneo mundial">
+      <div class="p-5">
+        <h3 class="text-xl font-bold text-blue-300 mb-2">League of Legends: Worlds 2025</h3>
+        <p class="text-gray-300 text-sm">
+          Los equipos clasificados ya están entrenando para una de las competencias más
+          importantes del mundo gamer.
+        </p>
+      </div>
+    </article>
+
+    <!-- TARJETA 2 -->
+    <article class="bg-[#0d0d0d] rounded-2xl shadow-[0_0_20px_#22c55e] hover:shadow-[0_0_30px_#22c55e] transition overflow-hidden border border-green-700/40">
+      <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/df54e2b88bb3f632b7f32d79079b943f703c1656-1920x1080.jpg?accountingTag=val_esports"
+           class="h-48 w-full object-cover" alt="Valorant E-Sports">
+      <div class="p-5">
+        <h3 class="text-xl font-bold text-green-300 mb-2">VALORANT Champions Tour</h3>
+        <p class="text-gray-300 text-sm">
+          Los equipos latinoamericanos sorprenden este año con estrategias innovadoras.
+        </p>
+      </div>
+    </article>
+
+    <!-- TARJETA 3 -->
+    <article class="bg-[#0d0d0d] rounded-2xl shadow-[0_0_20px_#f43f5e] hover:shadow-[0_0_30px_#f43f5e] transition overflow-hidden border border-red-700/40">
+      <img src="https://as.com/deporteyvida/imagenes/2019/03/04/portada/1551683378_452009_1551684384_sumario_grande.jpg"
+           class="h-48 w-full object-cover" alt="E-sports entrenamiento">
+      <div class="p-5">
+        <h3 class="text-xl font-bold text-red-300 mb-2">Entrenamiento Profesional</h3>
+        <p class="text-gray-300 text-sm">
+          Equipos top revelan cómo practican 8 horas al día para mantenerse al máximo nivel competitivo.
+        </p>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- SECCIÓN DESTACADA -->
+  <section class="mt-14 bg-[#0d0d0d] shadow-[0_0_20px_#8b5cf6] rounded-2xl p-6 border border-purple-700/40">
+    <h2 class="text-3xl font-bold text-purple-400 mb-4">Torneos Destacados</h2>
+
+    <ul class="space-y-3 text-gray-300">
+      <li class="border-b border-purple-700/40 pb-3">
+        <strong class="text-lg text-white">Dota 2 — The International</strong><br>
+        <span>Uno de los premios más grandes del gaming competitivo.</span>
+      </li>
+
+      <li class="border-b border-purple-700/40 pb-3">
+        <strong class="text-lg text-white">CS2 Major Championship</strong><br>
+        <span>Miles de espectadores siguen cada ronda con emoción.</span>
+      </li>
+
+      <li>
+        <strong class="text-lg text-white">Fortnite Championship Series</strong><br>
+        <span>Los jóvenes talentos siguen dominando la escena.</span>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+
+</body>
+
+  <!-- DIVISOR GAMER -->
+<div class="h-6 w-full bg-gradient-to-r from-purple-600 via-fuchsia-500 to-purple-600 opacity-70"></div>
+
+
+<!-- FOOTER -->
+<div include-html="partials/footer.html"></div>
+
+
+</html>

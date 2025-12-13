@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free-to-Play — GameWorld</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Script para incluir navbar y footer -->
+  <script src="js/include.js" defer></script>
+</head>
+
+<body class="bg-gray-950 text-gray-200">
+
+  <!-- NAVBAR -->
+  <div include-html="partials/navbar.html"></div>
+
+  <!-- HERO -->
+  <header class="relative h-72 bg-cover bg-center"
+    style="background-image: url('https://i.ytimg.com/vi/_kKa6O4jpkk/maxresdefault.jpg');">
+    <div class="absolute inset-0 bg-black/60 flex items-center justify-center backdrop-blur-sm">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-purple-400 drop-shadow-[0_0_8px_rgba(168,85,247,0.7)]">
+        Free-to-Play • Recomendaciones y Tendencias
+      </h1>
+    </div>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main class="max-w-7xl mx-auto px-6 py-14">
+
+    <h2 class="text-3xl font-bold text-purple-400 drop-shadow mb-8">Top Juegos Free-to-Play del Momento</h2>
+
+    <!-- GRID DE JUEGOS -->
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- CARD BASE -->
+      <article class="bg-gray-900 border border-gray-700 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-purple-500/40 transition overflow-hidden">
+        <img src="https://cdn2.unrealengine.com/fneco-2025-keyart-thumb-1920x1080-de84aedabf4d.jpg"
+             class="h-48 w-full object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-bold text-purple-300">Fortnite</h3>
+          <p class="text-gray-400 mt-3">
+            Batallas frenéticas, eventos especiales y una comunidad activa lo mantienen entre los favoritos.
+          </p>
+        </div>
+      </article>
+
+      <article class="bg-gray-900 border border-gray-700 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-purple-500/40 transition overflow-hidden">
+        <img src="https://i.ytimg.com/vi/fmoe1vqDQaE/maxresdefault.jpg"
+             class="h-48 w-full object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-bold text-purple-300">VALORANT</h3>
+          <p class="text-gray-400 mt-3">
+            Shooter táctico competitivo con habilidades y un ecosistema eSports enorme.
+          </p>
+        </div>
+      </article>
+
+      <article class="bg-gray-900 border border-gray-700 rounded-2xl shadow-lg hover:-translate-y-1 hover:shadow-purple-500/40 transition overflow-hidden">
+        <img src="https://fastcdn.hoyoverse.com/content-v2/plat/124031/5d2ba4371115d26de4c574b28311aed8_1088324040958400144.jpeg"
+             class="h-48 w-full object-cover">
+        <div class="p-5">
+          <h3 class="text-xl font-bold text-purple-300">Genshin Impact</h3>
+          <p class="text-gray-400 mt-3">
+            RPG de mundo abierto con un apartado visual impresionante. Calidad AAA sin costo.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- SECCIÓN GUIADA -->
+    <section class="mt-16 bg-gray-900 border border-gray-700 p-8 rounded-2xl shadow-md">
+      <h2 class="text-3xl font-bold text-purple-400 mb-6">Recomendaciones Para Nuevos Jugadores</h2>
+
+      <div class="space-y-4 text-gray-300">
+        <p>✔ Elige un juego que coincida con tu estilo: competitivo, casual o cooperativo.</p>
+        <p>✔ Comprueba que tu PC o consola cumpla los requisitos mínimos.</p>
+        <p>✔ No realices compras hasta conocer cómo funciona la economía del juego.</p>
+        <p>✔ Únete a comunidades para aprender más rápido y encontrar equipo.</p>
+      </div>
+    </section>
+
+    <!-- LISTA DE OTROS JUEGOS -->
+    <section class="mt-16">
+      <h2 class="text-3xl font-bold text-purple-400 mb-6">Otros Free-to-Play Populares</h2>
+
+      <ul class="grid md:grid-cols-2 gap-5">
+        <li class="bg-gray-900 p-4 rounded-xl border border-gray-700 shadow">🎮 <strong>Apex Legends</strong> — Shooter rápido con escuadras de tres.</li>
+        <li class="bg-gray-900 p-4 rounded-xl border border-gray-700 shadow">🚗 <strong>Rocket League</strong> — Fútbol con autos en modo competitivo.</li>
+        <li class="bg-gray-900 p-4 rounded-xl border border-gray-700 shadow">⚔️ <strong>Warframe</strong> — Acción frenética con universo en expansión.</li>
+        <li class="bg-gray-900 p-4 rounded-xl border border-gray-700 shadow">🔫 <strong>CoD: Warzone</strong> — Battle royale de gran escala.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- DIVISOR GAMER -->
+  <div class="h-6 w-full bg-gradient-to-r from-purple-600 via-pink-500 to-purple-600 opacity-70"></div>
+
+  <!-- FOOTER -->
+  <div include-html="partials/footer.html"></div>
+
+</body>
+</html>

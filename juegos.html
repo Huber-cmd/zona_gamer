@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juegos</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Includes -->
+  <script src="js/include.js" defer></script>
+</head>
+
+
+<body class="bg-gray-900">
+
+  <!-- NAVBAR -->
+  <div include-html="partials/navbar.html"></div>
+
+  <!-- HERO GAMER -->
+  <section class="relative">
+    <img src="https://i0.wp.com/www.parapcgamers.com/wp-content/uploads/2015/05/mejores-juegos-de-pc.jpg?fit=1920%2C1080&ssl=1"
+         class="w-full h-[380px] object-cover opacity-30">
+
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6">
+      <h1 class="text-5xl font-extrabold text-purple-400 drop-shadow-lg">Zona Gamer</h1>
+      <p class="mt-4 text-gray-200 max-w-2xl">
+        Explora lo mejor del gaming: noticias, lanzamientos, tops y más.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- CATEGORÍAS DE JUEGOS -->
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-purple-300 text-center">Categorías Populares</h2>
+
+    <div class="grid md:grid-cols-4 gap-8 mt-12">
+
+      <!-- Acción -->
+      <div class="bg-gray-800 px-4 py-6 rounded-2xl shadow-lg border border-gray-700 hover:-translate-y-1 transition">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.4BQG1fpRqCzf2M8xjxLm8AHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+             class="rounded-lg h-40 w-full object-cover">
+        <h3 class="mt-4 text-xl font-semibold">Acción</h3>
+        <p class="text-gray-400 text-sm mt-1">FPS, aventuras y adrenalina pura.</p>
+      </div>
+
+      <!-- Aventuras -->
+      <div class="bg-gray-800 px-4 py-6 rounded-2xl shadow-lg border border-gray-700 hover:-translate-y-1 transition">
+        <img src="https://p4.wallpaperbetter.com/wallpaper/270/722/364/accion-aventuras-juegos-video-wallpaper-preview.jpg"
+             class="rounded-lg h-40 w-full object-cover">
+        <h3 class="mt-4 text-xl font-semibold">Aventuras</h3>
+        <p class="text-gray-400 text-sm mt-1">Exploración, historias y mundos enormes.</p>
+      </div>
+
+      <!-- Deportes -->
+      <div class="bg-gray-800 px-4 py-6 rounded-2xl shadow-lg border border-gray-700 hover:-translate-y-1 transition">
+        <img src="https://img.freepik.com/fotos-premium/fondo-juegos-deportivos_670382-251270.jpg"
+             class="rounded-lg h-40 w-full object-cover">
+        <h3 class="mt-4 text-xl font-semibold">Deportes</h3>
+        <p class="text-gray-400 text-sm mt-1">Fútbol, carreras y simulaciones pro.</p>
+      </div>
+
+      <!-- RPG -->
+      <div class="bg-gray-800 px-4 py-6 rounded-2xl shadow-lg border border-gray-700 hover:-translate-y-1 transition">
+        <img src="https://wallpapers.com/images/hd/rpg-games-3840-x-2160-wallpaper-2uonmafqwwbhrqf4.jpg"
+             class="rounded-lg h-40 w-full object-cover">
+        <h3 class="mt-4 text-xl font-semibold">RPG</h3>
+        <p class="text-gray-400 text-sm mt-1">Historias profundas y evolución de personajes.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- TOP JUEGOS DEL MES -->
+  <section class="bg-gray-950 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <h2 class="text-3xl font-bold text-purple-300 text-center">Top Juegos del Mes</h2>
+
+      <div class="grid md:grid-cols-3 gap-12 mt-14">
+
+        <!-- Juego 1 -->
+        <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700">
+          <img src="https://flowgames.gg/wp-content/uploads/2023/07/9edf816d-5625-45d2-9ef6-8b2ae65bb7eaCover_Elder-Ring.webp"
+               class="rounded-xl h-56 w-full object-cover">
+          <h3 class="mt-4 text-xl font-semibold">Elden Ring</h3>
+          <p class="text-gray-400 mt-2 text-sm">Aclamado por su mundo abierto y dificultad única.</p>
+        </div>
+
+        <!-- Juego 2 -->
+        <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700">
+          <img src="https://th.bing.com/th/id/R.92463ea65b9072adcc5253f6ddf9b0be?rik=AznqmLwZstLUKA&pid=ImgRaw&r=0"
+               class="rounded-xl h-56 w-full object-cover">
+          <h3 class="mt-4 text-xl font-semibold">God of War Ragnarök</h3>
+          <p class="text-gray-400 mt-2 text-sm">Acción épica con calidad cinematográfica.</p>
+        </div>
+
+        <!-- Juego 3 -->
+        <div class="bg-gray-800 rounded-2xl p-6 border border-gray-700">
+          <img src="https://products.eneba.games/products/as6moypDpgwQPID-6udfYFbBB442kZcaawv__4rPHEM.jpg"
+               class="rounded-xl h-56 w-full object-cover">
+          <h3 class="mt-4 text-xl font-semibold">Spider-Man 2</h3>
+          <p class="text-gray-400 mt-2 text-sm">Una experiencia fluida con combates increíbles.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+<section class="max-w-7xl mx-auto px-6 py-20">
+  <h2 class="text-3xl font-bold text-purple-300 text-center">Trailers Destacados</h2>
+
+  <div class="grid md:grid-cols-3 gap-10 mt-12">
+
+    <!-- Tarjeta 1 -->
+<div class="bg-gray-900 rounded-xl shadow-xl border border-gray-800 hover:scale-105 transition transform rgb-glow">
+  
+  <div class="relative w-full pb-[56.25%] overflow-hidden rounded-t-xl">
+    <iframe 
+      class="absolute top-0 left-0 w-full h-full"
+      src="https://www.youtube.com/embed/BQy0wD6YXrk?si=LESFj_iI7rJ2acg2"
+      title="Tomb Raider: Catalyst - Official Reveal Trailer"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" 
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="p-4">
+    <h3 class="text-white font-semibold">Tomb Raider: Catalyst - Official Reveal Trailer</h3>
+  </div>
+</div>
+
+<!-- Tarjeta 2 -->
+<div class="rounded-xl overflow-hidden shadow-lg border border-gray-700">
+  <div class="relative w-full pb-[56.25%] overflow-hidden">
+    <iframe 
+      class="absolute top-0 left-0 w-full h-full"
+      src="https://www.youtube.com/embed/xFGneCQC6mM?si=MbFX974cjRpR3BW5"
+      title="Resident Evil Requiem - Official"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="p-4">
+    <h3 class="text-white font-semibold">Resident Evil Requiem - Official</h3>
+  </div>
+</div>
+
+<!-- Tarjeta 3 -->
+<div class="rounded-xl overflow-hidden shadow-lg border border-gray-700">
+  <div class="relative w-full pb-[56.25%] overflow-hidden">
+    <iframe 
+      class="absolute top-0 left-0 w-full h-full"
+      src="https://www.youtube.com/embed/QeCItSg-wmI?si=V_jWw1TpII1l0nSz"
+      title="Total War: Warhammer 40,000 Announce Trailer"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="p-4">
+    <h3 class="text-white font-semibold">Total War: Warhammer 40,000 Announce Trailer</h3>
+  </div>
+</div>
+
+  </div>
+</section>
+
+  <!-- NOTICIAS GAMER -->
+  <section class="bg-gray-950 py-16">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <h2 class="text-3xl font-bold text-purple-300 text-center">Noticias Gamer</h2>
+
+      <div class="grid md:grid-cols-3 gap-10 mt-12">
+
+        <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700">
+          <h3 class="font-semibold text-xl">PS6 podría anunciarse en 2026</h3>
+          <p class="text-gray-300 mt-2 text-sm">Rumores indican un salto gráfico monumental.</p>
+          <a class="text-purple-400 mt-3 inline-block">Leer más →</a>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700">
+          <h3 class="font-semibold text-xl">Xbox prepara nuevo ecosistema</h3>
+          <p class="text-gray-300 mt-2 text-sm">Integración total entre consola y PC.</p>
+          <a class="text-purple-400 mt-3 inline-block">Leer más →</a>
+        </div>
+
+        <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700">
+          <h3 class="font-semibold text-xl">Nintendo mejora Switch 2</h3>
+          <p class="text-gray-300 mt-2 text-sm">Rumores sobre pantalla OLED 1440p.</p>
+          <a class="text-purple-400 mt-3 inline-block">Leer más →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PRÓXIMOS LANZAMIENTOS -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="text-3xl font-bold text-purple-300 text-center">Próximos Lanzamientos</h2>
+
+    <div class="grid md:grid-cols-4 gap-8 mt-12">
+
+      <div class="bg-gray-800 p-4 rounded-2xl border border-gray-700 shadow-lg">
+        <img src="https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch2/70010000105851/8787627be7f26ae7984456ffd9af17bea845032cebbf59fe6eeb596dea6bb20e"
+             class="rounded-lg h-40 w-full object-cover">
+        <h3 class="mt-3 text-lg font-semibold">Hollow Knight: Silksong</h3>
+        <p class="text-gray-400 text-sm">Fecha por confirmar.</p>
+      </div>
+
+      <div class="bg-gray-800 p-4 rounded-2xl border border-gray-700 shadow-lg">
+        <img src="https://alfabetajuega.com/hero/2025/05/gta6.1747223093.7085.jpg?width=768&aspect_ratio=16:9&format=nowebp"
+             class="rounded-lg h-40 w-full object-cover">
+        <h3 class="mt-3 text-lg font-semibold">GTA 6</h3>
+        <p class="text-gray-400 text-sm">2025</p>
+      </div>
+
+      <div class="bg-gray-800 p-4 rounded-2xl border border-gray-700 shadow-lg">
+        <img src="https://media.es.wired.com/photos/6880fadda69582ec829f6bca/3:2/w_1620,h_1080,c_limit/ea-sports-fc-26-Cover.jpg"
+             class="rounded-lg h-40 w-full object-cover">
+        <h3 class="mt-3 text-lg font-semibold">FIFA 26</h3>
+        <p class="text-gray-400 text-sm">Octubre 2025</p>
+      </div>
+
+      <div class="bg-gray-800 p-4 rounded-2xl border border-gray-700 shadow-lg">
+        <img src="https://cdn-l.cdprojektred.com/news/53ad1f9be67229b1f8da293d15df95f6_q90_1920x1080.png"
+             class="rounded-lg h-40 w-full object-cover">
+        <h3 class="mt-3 text-lg font-semibold">Cyberpunk 2077 II</h3>
+        <p class="text-gray-400 text-sm">En desarrollo...</p>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+
+  <!-- DIVISOR GAMER -->
+<div class="h-6 w-full bg-gradient-to-r from-purple-600 via-fuchsia-500 to-purple-600 opacity-70"></div>
+
+<!-- FOOTER -->
+<div include-html="partials/footer.html"></div>
+
+</html>

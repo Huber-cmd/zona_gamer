@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zona Gamer & Tech</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Include navbar/footer -->
+  <script src="js/include.js" defer></script>
+
+  <style>
+    /* Glow RGB animado para tarjetas y botones */
+    @keyframes rgbGlow {
+      0% { box-shadow: 0 0 15px #ff0080; }
+      25% { box-shadow: 0 0 15px #00eaff; }
+      50% { box-shadow: 0 0 15px #8aff00; }
+      75% { box-shadow: 0 0 15px #ffea00; }
+      100% { box-shadow: 0 0 15px #ff0080; }
+    }
+
+    .rgb-glow {
+      animation: rgbGlow 3s infinite alternate;
+    }
+
+    body { padding-top: 90px; }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-gray-200">
+
+  <!-- NAVBAR -->
+  <div include-html="partials/navbar.html"></div>
+
+  <!-- HERO GAMER -->
+  <section class="relative h-[600px] flex items-center justify-center">
+    <img src="https://i.pinimg.com/736x/7e/c2/97/7ec2976f3e8e5e77d178254ab8833dd0.jpg "
+         class="absolute w-full h-full object-cover opacity-40">
+    <div class="absolute inset-0 bg-black/60 backdrop-blur-sm flex flex-col items-center justify-center text-center px-6">
+      <h1 class="text-6xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-blue-400 drop-shadow-xl">
+        Zona Gamer & Tech
+      </h1>
+      <p class="mt-4 text-lg md:text-xl max-w-3xl text-gray-200 drop-shadow-lg">
+        Noticias, videojuegos, hardware de última generación y lo mejor del mundo tecnológico.
+      </p>
+      <a href="#servicios" 
+         class="mt-6 px-8 py-4 rounded-xl bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 text-white font-semibold shadow-lg rgb-glow hover:scale-105 transition transform">
+        Comenzar
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold text-center text-purple-400 mb-14">Nuestros Servicios</h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700 shadow-lg hover:shadow-purple-600/50 transition transform hover:-translate-y-1 rgb-glow">
+          <img src="https://www.enred.ec/wp-content/uploads/2023/04/DESARROLLO-WEB.jpg"
+               class="rounded-xl h-48 w-full object-cover mb-4">
+          <h3 class="text-xl font-semibold text-white mb-2">Desarrollo Web</h3>
+          <p class="text-gray-400">Sitios modernos, rápidos y optimizados con tecnologías actuales.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700 shadow-lg hover:shadow-purple-600/50 transition transform hover:-translate-y-1 rgb-glow">
+          <img src="https://publicitario.info/wp-content/uploads/2024/01/UI-UX.jpg"
+               class="rounded-xl h-48 w-full object-cover mb-4">
+          <h3 class="text-xl font-semibold text-white mb-2">Diseño UI/UX</h3>
+          <p class="text-gray-400">Interfaces atractivas y agradables enfocadas en la experiencia del usuario.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-2xl border border-gray-700 shadow-lg hover:shadow-purple-600/50 transition transform hover:-translate-y-1 rgb-glow">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+               class="rounded-xl h-48 w-full object-cover mb-4">
+          <h3 class="text-xl font-semibold text-white mb-2">Consultoría Tecnológica</h3>
+          <p class="text-gray-400">Optimización, análisis y guía para mejoras digitales empresariales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- VIDEOS DESTACADOS -->
+<section class="py-20 bg-gray-950">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-4xl font-extrabold text-purple-400 mb-14">Videos Destacados</h2>
+
+    <!-- Carrusel -->
+    <div class="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide px-2">
+      
+      <!-- Video 1 -->
+<div class="min-w-[300px] bg-gray-900 rounded-xl shadow-xl border border-gray-800 hover:scale-105 transition transform rgb-glow snap-center flex-shrink-0">
+<iframe width="400" height="315" src="https://www.youtube.com/embed/3LCL9SeLJQw?si=qI_7Zhs3gh5zUBU8" 
+ title="YouTube video player" 
+ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+  <div class="p-4">
+    <h3 class="text-white font-semibold">Unboxing RTX 5090</h3>
+  </div>
+</div>
+
+
+      <!-- Video 2 -->
+      <div class="min-w-[300px] bg-gray-900 rounded-xl shadow-xl border border-gray-800 hover:scale-105 transition transform rgb-glow snap-center flex-shrink-0">
+<iframe width="400" height="315" src="https://www.youtube.com/embed/wTiVm01_Npg?si=eXboywEpdTgUIgsY" 
+ title="YouTube video player" 
+ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+ referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+
+        <div class="p-4">
+          <h3 class="text-white font-semibold">PS6 Filtraciones</h3>
+        </div>
+      </div>
+
+      <!-- Video 3 -->
+      <div class="min-w-[300px] bg-gray-900 rounded-xl shadow-xl border border-gray-800 hover:scale-105 transition transform rgb-glow snap-center flex-shrink-0">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/otd3XGMZ6oY?si=Z5syupO-U5SMUCnD" 
+         title="YouTube video player" 
+         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+
+        <div class="p-4">
+          <h3 class="text-white font-semibold">Elden Ring 2™ GAME AWARDS 2025 OFFICIAL REVEAL!?</h3>
+        </div>
+      </div>
+      <!-- Video 4 -->
+      <div class="min-w-[300px] bg-gray-900 rounded-xl shadow-xl border border-gray-800 hover:scale-105 transition transform rgb-glow snap-center flex-shrink-0">
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/K1ReNL33n4Q?si=DxCOr18O2PErnkO3" 
+         title="YouTube video player" 
+         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+
+        <div class="p-4">
+          <h3 class="text-white font-semibold">Los 10 anuncios más flipantes de los Game Awards 2025</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- NOTICIAS DESTACADAS -->
+  <section class="py-20 bg-gray-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-extrabold text-purple-400 text-center mb-14">Noticias Gamer</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 shadow-lg hover:scale-105 transition transform rgb-glow">
+          <h3 class="font-bold text-lg mb-2">Posibles detalles de la PS5 Pro</h3>
+          <p class="text-gray-400">Filtraciones indican mejoras gráficas del 45%.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 shadow-lg hover:scale-105 transition transform rgb-glow">
+          <h3 class="font-bold text-lg mb-2">GTA VI: Nuevo tráiler</h3>
+          <p class="text-gray-400">Escenas en Vice City con gráficos increíbles.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 shadow-lg hover:scale-105 transition transform rgb-glow">
+          <h3 class="font-bold text-lg mb-2">Xbox anuncia nuevo ecosistema</h3>
+          <p class="text-gray-400">Integración completa entre consola y PC.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="py-20 bg-gray-950">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-extrabold text-purple-400 mb-14">Lo que dicen nuestros clientes</h2>
+
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 shadow-lg hover:scale-105 transition transform rgb-glow">
+          <p class="text-gray-300">"Excelente servicio, profesionales y atentos."</p>
+          <h3 class="mt-4 text-purple-400 font-semibold">María López</h3>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 shadow-lg hover:scale-105 transition transform rgb-glow">
+          <p class="text-gray-300">"Resolvieron todo de forma rápida y con gran calidad."</p>
+          <h3 class="mt-4 text-purple-400 font-semibold">Carlos Pérez</h3>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 shadow-lg hover:scale-105 transition transform rgb-glow">
+          <p class="text-gray-300">"Su enfoque UX fue impresionante."</p>
+          <h3 class="mt-4 text-purple-400 font-semibold">Ana Castillo</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div include-html="partials/footer.html"></div>
+
+</body>
+</html>

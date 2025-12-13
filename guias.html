@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guías - Análisis Gamer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0a0a0a] text-gray-200">
+
+  <!-- NAVBAR GLOBAL -->
+  <div include-html="partials/navbar.html"></div>
+
+  <!-- HERO -->
+  <section class="h-72 bg-[url('https://images.unsplash.com/photo-1612831455541-bb54c8f49718')] 
+      bg-cover bg-center flex items-center justify-center relative">
+    <div class="absolute inset-0 bg-black/70"></div>
+    <h1 class="relative text-5xl font-extrabold text-purple-400 drop-shadow-xl text-center">
+      Guías Gamer – Aprende y Mejora
+    </h1>
+  </section>
+
+  <main class="max-w-6xl mx-auto px-6 py-12">
+
+    <!-- TABLA DE CONTENIDOS -->
+    <div class="mb-12 bg-[#121212] p-6 rounded-xl border border-purple-500/30">
+      <h2 class="text-2xl font-bold text-purple-400 mb-4">Tabla de contenidos</h2>
+      <ul class="list-disc list-inside space-y-1 text-gray-300">
+        <li><a href="#destacadas" class="text-purple-400 underline">Guías destacadas</a></li>
+        <li><a href="#categorias" class="text-purple-400 underline">Categorías</a></li>
+        <li><a href="#recientes" class="text-purple-400 underline">Guías recientes</a></li>
+        <li><a href="#tips" class="text-purple-400 underline">Tips y curiosidades gamer</a></li>
+      </ul>
+    </div>
+
+    <!-- GUÍAS DESTACADAS -->
+    <h2 id="destacadas" class="text-3xl font-bold text-purple-400 mb-8">Guías destacadas</h2>
+
+<div class="space-y-12 mb-12">
+
+  <!-- GUÍA 1 -->
+  <article class="bg-[#121212] rounded-xl border border-purple-500/30 p-6">
+    <h3 class="text-2xl font-bold text-purple-300 mb-2">Cómo dominar Elden Ring</h3>
+    <p class="text-gray-300 mb-4">
+      Estrategias avanzadas, builds recomendadas y secretos del juego. Aprende a enfrentar jefes opcionales, caminos secretos y builds de personajes. Farmear materiales raros y optimizar tu stamina y combate.
+    </p>
+
+    <!-- VIDEO RESPONSIVE -->
+    <div class="w-full aspect-video rounded-lg overflow-hidden mb-3">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/179dTI7eomg?si=00gyNxj2BOB948js"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+
+    <p class="text-gray-300">Más recursos: <a href="https://www.reddit.com/r/EldenRing/" class="text-purple-400 underline" target="_blank">Foro Elden Ring</a></p>
+  </article>
+
+  <!-- GUÍA 2 -->
+  <article class="bg-[#121212] rounded-xl border border-purple-500/30 p-6">
+    <h3 class="text-2xl font-bold text-purple-300 mb-2">FPS: Mejores configuraciones</h3>
+    <p class="text-gray-300 mb-4">
+      Optimiza tu experiencia en FPS con configuraciones gráficas, resolución, sensibilidad de mouse y audio para reaccionar más rápido. Ajustes que aumentan la fluidez y precisión en shooters.
+    </p>
+
+    <!-- VIDEO RESPONSIVE -->
+    <div class="w-full aspect-video rounded-lg overflow-hidden mb-3">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/EkjoKU3RdJQ?si=-unjBjrunO05aIds"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+
+    <p class="text-gray-300">Más tips: <a href="https://www.reddit.com/r/FPSgaming/" class="text-purple-400 underline" target="_blank">Comunidad FPS</a></p>
+  </article>
+
+  <!-- GUÍA 3 -->
+  <article class="bg-[#121212] rounded-xl border border-purple-500/30 p-6">
+    <h3 class="text-2xl font-bold text-purple-300 mb-2">MMORPG 2025: Progresión rápida</h3>
+    <p class="text-gray-300 mb-4">
+      Subir de nivel rápido, completar raids y conseguir equipamiento de élite con estrategias y builds optimizadas en los MMORPG más populares.
+    </p>
+
+    <!-- VIDEO RESPONSIVE -->
+    <div class="w-full aspect-video rounded-lg overflow-hidden mb-3">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/25KlD6NZAuU?si=HK6x_CY1And7p6eD"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+
+    <p class="text-gray-300">Más información: <a href="https://www.reddit.com/r/MMORPG/" class="text-purple-400 underline" target="_blank">Foro MMORPG</a></p>
+  </article>
+
+</div>
+
+
+    <!-- CATEGORÍAS -->
+    <h2 id="categorias" class="text-3xl font-bold text-purple-400 mb-6">Categorías de guías</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      <div class="bg-purple-800/30 p-6 rounded-xl border border-purple-500/30 text-center text-purple-200 font-semibold">RPG</div>
+      <div class="bg-purple-800/30 p-6 rounded-xl border border-purple-500/30 text-center text-purple-200 font-semibold">FPS</div>
+      <div class="bg-purple-800/30 p-6 rounded-xl border border-purple-500/30 text-center text-purple-200 font-semibold">MMORPG</div>
+      <div class="bg-purple-800/30 p-6 rounded-xl border border-purple-500/30 text-center text-purple-200 font-semibold">Consolas</div>
+      <div class="bg-purple-800/30 p-6 rounded-xl border border-purple-500/30 text-center text-purple-200 font-semibold">Hardware</div>
+      <div class="bg-purple-800/30 p-6 rounded-xl border border-purple-500/30 text-center text-purple-200 font-semibold">Trucos y Easter Eggs</div>
+    </div>
+
+    <!-- GUÍAS RECIENTES -->
+    <h2 id="recientes" class="text-3xl font-bold text-purple-400 mb-6">Guías recientes</h2>
+<div class="space-y-12 mb-12">
+
+  <article class="bg-[#121212] rounded-xl border border-purple-500/30 p-6">
+    <h3 class="text-xl font-bold text-purple-300 mb-2">Cyberpunk 2077 – Secretos ocultos</h3>
+    <p class="text-gray-300 mb-4">Descubre easter eggs y misiones secretas en Night City.</p>
+
+    <!-- VIDEO RESPONSIVE -->
+    <div class="w-full aspect-video rounded-lg overflow-hidden mb-3">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/z-9Eiqn4GDs?si=oVkQPBS9R5lHB86u"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+  </article>
+
+  <article class="bg-[#121212] rounded-xl border border-purple-500/30 p-6">
+    <h3 class="text-xl font-bold text-purple-300 mb-2">Configuración óptima de PS5</h3>
+    <p class="text-gray-300 mb-4">Mejores ajustes de pantalla, audio y red para jugar sin lag.</p>
+
+    <!-- VIDEO RESPONSIVE -->
+    <div class="w-full aspect-video rounded-lg overflow-hidden mb-3">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/bzMSzO8OWGs?si=ljfOfcnpTUawNKlD"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+  </article>
+
+</div>
+
+
+    <!-- TIPS Y CURIOSIDADES -->
+    <h2 id="tips" class="text-3xl font-bold text-purple-400 mb-6">Tips y curiosidades gamer</h2>
+    <div class="space-y-6">
+      <div class="bg-gradient-to-r from-purple-900/40 to-purple-600/20 p-6 rounded-xl border border-purple-500/40">
+        <h3 class="text-2xl font-semibold text-purple-300 mb-2">Optimiza tu setup gaming</h3>
+        <p class="text-gray-300">Coloca tus periféricos correctamente, ajusta la iluminación y reduce distracciones para mejorar tu experiencia de juego.</p>
+      </div>
+      <div class="bg-gradient-to-r from-purple-900/40 to-purple-600/20 p-6 rounded-xl border border-purple-500/40">
+        <h3 class="text-2xl font-semibold text-purple-300 mb-2">Curiosidades de videojuegos clásicos</h3>
+        <p class="text-gray-300">Muchos juegos tienen finales secretos y glitches famosos que aún los fanáticos buscan descubrir.</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER GLOBAL -->
+  <div include-html="partials/footer.html"></div>
+
+  <!-- SCRIPT include.js -->
+  <script src="js/include.js"></script>
+
+</body>
+</html>
